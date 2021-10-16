@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="jp">
 <head>
+    <!--memo:
+    headにfontをいれない。分業制で自分が担当する部分だけにフォントを反映させる。主に、bodyにcssで全体のフォントを指定する-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
@@ -88,7 +90,6 @@
                         <span class="news__list-detail">COACHTECHのサービスが開始されました。</span>
                     </a>
                 </li>
-                
             </ul>
         </div>
 
@@ -134,12 +135,14 @@
                 <p class="common__sub-ttl">Blog</p>
                 <h2 class="common__ttl">ブログ</h2>
                 <div class="flex__item blog-wrap">
+                    <!--クリックしたら、リンク→全体を<a>で囲む-->
                     <a class="blog-wrap__item" href="">
                         <img src="img/blog__first.jpg" alt="" class="blog-wrap__item-eyecatch">
                         <span class="blog-wrap__item-cat">Blog</span>
 
                         <div class="blog-wrap__item-content">
                             <h3 class="blog-wrap__item-content-ttl">プログラミング学習の勉強方法を特集。挫折しない秘訣とは?</h3>
+                            <!--横並びは、ul-->
                             <ul class="flex__item">
                                 <li class="blog-wrap__item-content-tag">2021/01/01</li>
                                 <li class="blog-wrap__item-content-tag">#COACHTECH</li>
@@ -206,7 +209,7 @@
                 </tr>
             </table>
         </div>
-
+　　　　　<!-- div id=の使いわけ-->
         <div id="recruit">
             <div class="flex__item">
                 <a class="recruit__item recruit__item--first" href="">
